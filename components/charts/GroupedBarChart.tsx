@@ -13,6 +13,7 @@ import {
 } from 'recharts'
 import { CHART_THEME, getChartColor, CHART_COLORS } from '@/lib/chart-theme'
 import { filterData, prepareGroupedBarData, prepareIntelligentMultiLevelData, getUniqueGeographies, getUniqueSegments, getGeographyProportions } from '@/lib/data-processor'
+import { defaultAggLevelWhenNoSegmentSelected } from '@/lib/segment-aggregation'
 import { useDashboardStore } from '@/lib/store'
 import type { DataRecord } from '@/lib/types'
 
@@ -52,8 +53,7 @@ export function GroupedBarChart({ title, height = 400 }: GroupedBarChartProps) {
       // User selected segments - show individual records (children of selected parents)
       effectiveAggregationLevel = null
     } else if (effectiveAggregationLevel === null) {
-      // No segments selected - use Level 2 to show parent segments aggregated
-      effectiveAggregationLevel = 2
+      effectiveAggregationLevel = defaultAggLevelWhenNoSegmentSelected(filters.segmentType)
     }
 
     console.log('📊 Chart Data Debug:', {

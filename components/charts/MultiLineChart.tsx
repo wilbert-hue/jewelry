@@ -13,6 +13,7 @@ import {
 } from 'recharts'
 import { CHART_THEME, getChartColor } from '@/lib/chart-theme'
 import { filterData, prepareLineChartData, prepareIntelligentMultiLevelData, getUniqueGeographies, getUniqueSegments, getGeographyProportions } from '@/lib/data-processor'
+import { defaultAggLevelWhenNoSegmentSelected } from '@/lib/segment-aggregation'
 import { useDashboardStore } from '@/lib/store'
 
 interface MultiLineChartProps {
@@ -43,8 +44,7 @@ export function MultiLineChart({ title, height = 400 }: MultiLineChartProps) {
       const hasSegmentsForCurrentType = segmentsFromSameType.length > 0
 
       if (!hasSegmentsForCurrentType) {
-        // No segments selected - use Level 2 to show parent segments aggregated
-        effectiveAggregationLevel = 2
+        effectiveAggregationLevel = defaultAggLevelWhenNoSegmentSelected(filters.segmentType)
       }
     }
 

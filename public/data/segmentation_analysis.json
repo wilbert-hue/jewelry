@@ -1,28 +1,57 @@
 {
   "Global": {
-    "By Type": {
-      "Sub-Normothermic Perfusion (20–34°C)": {},
-      "Warm or Normothermic Perfusion (35–37°C)": {}
+    "By Product Type": {
+      "Rings": {},
+      "Necklaces and Pendants": {},
+      "Earrings": {},
+      "Bracelets and Bangles": {},
+      "Anklets": {},
+      "Charms": {},
+      "Brooches and Pins": {},
+      "Jewelry Sets": {},
+      "Others (Cufflinks and Men's Accessories, etc.)": {}
     },
-    "By Organ Type": {
-      "Liver": {},
-      "Heart": {},
-      "Lung": {},
-      "Kidney": {},
-      "Others (Pancreas, Small bowel / Intestine, Composite Tissues / Limb Perfusion (emerging use cases))": {}
+    "By Base Material": {
+      "Sterling Silver": {},
+      "Gold Vermeil": {},
+      "Gold-Plated Brass": {},
+      "Gold-Plated Sterling Silver": {},
+      "Gold-Filled Metal": {},
+      "9K Gold": {},
+      "10K Gold": {},
+      "14K Gold": {},
+      "Stainless Steel with Precious Metal Finish": {},
+      "Mixed Metal Jewelry": {}
     },
-    "Application / Use Case": {
-      "Organ Preservation": {},
-      "Viability Assessment": {},
-      "Physiologic Transport": {},
-      "Reconditioning Marginal Organs": {},
-      "Others (Research Use / Protocol development)": {}
+    "By Design Style": {
+      "Minimalist Jewelry": {},
+      "Statement Jewelry": {},
+      "Personalized Jewelry": {},
+      "Stackable Jewelry": {},
+      "Charm-Based Jewelry": {},
+      "Vintage-Inspired Jewelry": {},
+      "Contemporary Designer Jewelry": {},
+      "Cultural / Ethnic-Inspired Jewelry": {}
     },
-    "By End User": {
-      "Hospitals & Clinics": {},
-      "Specialty Clinic/Centers": {},
-      "Transplant Centers": {},
-      "Others (Research Institutes/Centers, Organ Procurement Organizations, etc.)": {}
+    "By Purchase Occasion": {
+      "Daily Wear": {},
+      "Self-Purchase": {},
+      "Luxury Gifting": {},
+      "Festive and Cultural Purchase": {},
+      "Anniversary and Special Occasion": {},
+      "Bridal-Adjacent Purchase": {},
+      "Travel / Souvenir Purchase": {}
+    },
+    "By Distribution Channel": {
+      "Offline": {
+        "Mono-Brand Semi-Fine Jewelry Boutiques": {},
+        "Multi-Brand Jewelry Stores": {},
+        "Authorized Jewelry Retailers": {}
+      },
+      "Online": {
+        "Brand-Owned Websites": {},
+        "Third-Party Ecommerce Platforms": {}
+      }
     },
     "By Region": {
       "North America": {
@@ -30,11 +59,7 @@
         "Canada": {}
       },
       "Europe": {
-        "U.K.": {},
-        "Germany": {},
-        "Italy": {},
-        "France": {},
-        "Spain": {},
+        "Belgium": {},
         "Russia": {},
         "Rest of Europe": {}
       },
@@ -43,7 +68,9 @@
         "India": {},
         "Japan": {},
         "South Korea": {},
-        "ASEAN": {},
+        "Singapore": {},
+        "Thailand": {},
+        "Indonesia": {},
         "Australia": {},
         "Rest of Asia Pacific": {}
       },
@@ -53,10 +80,17 @@
         "Mexico": {},
         "Rest of Latin America": {}
       },
-      "Middle East & Africa": {
-        "GCC": {},
+      "Middle East": {
+        "UAE": {},
+        "Saudi Arabia": {},
+        "Qatar": {},
+        "Rest of Middle East": {}
+      },
+      "Africa": {
         "South Africa": {},
-        "Rest of Middle East & Africa": {}
+        "Nigeria": {},
+        "Egypt": {},
+        "Rest Of Africa": {}
       }
     }
   }

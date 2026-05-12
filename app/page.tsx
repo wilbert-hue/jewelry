@@ -21,7 +21,7 @@ import { ChartGroupSelector } from '@/components/filters/ChartGroupSelector'
 import { CustomScrollbar } from '@/components/ui/CustomScrollbar'
 import { GlobalKPICards } from '@/components/GlobalKPICards'
 import { getChartsForGroup } from '@/lib/chart-groups'
-import { Lightbulb, X, Layers, LayoutGrid, Settings } from 'lucide-react'
+import { Lightbulb, X, Layers, LayoutGrid, Settings, Info } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { Footer } from '@/components/Footer'
 import Image from 'next/image'
@@ -204,7 +204,7 @@ export default function DashboardPage() {
                 Coherent Dashboard
               </h1>
               <h2 className="text-sm text-black">
-                {dashboardName || 'Global Normothermic Machine Perfusion Market'}
+                {dashboardName || 'Global Semi Fine Jewelry Market'}
               </h2>
             </div>
           </div>
@@ -216,6 +216,18 @@ export default function DashboardPage() {
           <GlobalKPICards />
         </div>
 
+        <div
+          className="mb-6 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 shadow-sm"
+          role="alert"
+        >
+          <div className="flex gap-3">
+            <Info className="h-5 w-5 shrink-0 text-amber-700 mt-0.5" aria-hidden />
+            <p className="text-sm text-amber-950">
+              <span className="font-semibold">NOTE:</span>{' '}
+              All the data in the dashboard is demo data. No real-world data is related to this.
+            </p>
+          </div>
+        </div>
 
         <div className="grid grid-cols-12 gap-6">
           {/* Sidebar - Enhanced Filter Panel */}
